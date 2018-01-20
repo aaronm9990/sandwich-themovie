@@ -1,24 +1,40 @@
 body{
-    background-color:#000066;
-    color:white;
+    background-color:black;
+    color:lightgreen;
     text-align:center;
-    font-family:"Press Start 2P"
+    font-family:"Press Start 2P";        
+    border-color:red;
+    border-style: dashed;
+    -webkit-animation-name: black;
+    animation: flicker;
+    -webkit-animation-duration: 4s;
+}
+@keyframes flicker{
+    0%{opacity:2;}
+    50%{opacity:0;}
+    100%{opacity:2;}
 }
 
-span{
+
+
+}
+span{  
     font-size:20px;
     font-style:italic;
 }
 strong{
     font-size:20px;
     color:red;
+    text-shadow:30px 10px 0 #aaa;
 }
+
 img{
     width:20%;
-    max-width:70%;
+    max-width:80%;
     border-radius:50%;
     border:20px;
     margin-bottom:20px;
+              
 }
 #man{
     float:right;
